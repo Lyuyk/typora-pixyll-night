@@ -1,0 +1,866 @@
+@include-when-export url(https://fonts.loli.net/css?family=Merriweather:900,900italic,300,300italic&subset=latin-ext);
+@include-when-export url(https://fonts.loli.net/css?family=Lato:900,300&subset=latin-ext);
+
+:root {
+	--control-text-color: #443a3a;
+}
+
+/**
+ * forked from pixyll.com
+ * MIT license
+ */
+
+@font-face {
+	font-family: 'Merriweather';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Merriweather Light'), local('Merriweather-Light'), url('./pixyll/merriweather-v19-latin-300.woff') format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Merriweather';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Merriweather Heavy'), local('Merriweather-Heavy'), url('./pixyll/merriweather-v19-latin-700.woff') format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Merriweather';
+	font-style: italic;
+	font-weight: normal;
+	src: local('Merriweather Light Italic'), local('Merriweather-LightItalic'), url('./pixyll/merriweather-v19-latin-300italic.woff') format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Merriweather';
+	font-style: italic;
+	font-weight: bold;
+	src: local('Merriweather Heavy Italic'), local('Merriweather-HeavyItalic'), url('./pixyll/merriweather-v19-latin-700italic.woff') format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Lato Light'), local('Lato-Light'), url('./pixyll/lato-v14-latin-300.woff') format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Lato Black'), local('Lato-Blcak'), url('./pixyll/lato-v14-latin-900.woff') format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: italic;
+	font-weight: normal;
+	src: local('Lato LightItalic'), local('Lato-LightItalic'), url('./pixyll/lato-v14-latin-300italic.woff') format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+	font-family: 'Lato';
+	font-style: italic;
+	font-weight: bold;
+	src: local('Lato BlackItalic'), local('Lato-BlackItalic'), url('./pixyll/lato-v14-latin-900italic.woff') format('woff');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+h1,
+.h1,
+.f1 {
+	font-size: 2rem;
+	line-height: 2.5rem;
+}
+h2,
+.h2,
+.f2 {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+h3,
+.h3,
+.f3 {
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+p,
+.p,
+.f4,
+h4,
+h5,
+h6,
+dl,
+ol,
+ul,
+pre[cid],
+div[cid],
+#typora-source {
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+}
+
+h4 {
+	font-size: 1.13rem;
+}
+/*
+ Pixyll
+ A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff.
+ Best served with BASSCSS (http://jxnblk.github.io/basscss)
+ Crafted with <3 by John Otander (@4lpine) - ©2015 John Otander MIT License http://opensource.org/licenses/MIT
+
+*/
+
+body {
+	font-family: "家族宋","Merriweather", "PT Serif", Georgia, "Times New Roman",  "STSong",  Serif;
+	line-height: 1.5rem;
+	font-weight: 400;
+}
+
+#write {
+	max-width: 914px;
+	color: #ededed;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1100px;
+	}
+}
+
+@media only screen and (min-width: 1700px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+img {
+	width: auto;
+	max-width: 100%;
+}
+
+:root {
+	--bg-color: #2e3032;
+	--text-color: #e7e6e6;
+	--md-char-color: #5b5b5b;
+	--meta-content-color: #757575;
+	--table-border-color: #5b5b5b;
+	--select-text-bg-color: #285194;
+	--primary-color: #428bca;
+	--primary-btn-border-color: #285e8e;
+	--primary-btn-text-color: #ddd;
+	--window-border: 1px solid #1b1b1d;
+	--active-file-bg-color: #1b1b1d;
+	--active-file-text-color: inherit;
+	--active-file-border-color: #757575;
+	--active-search-item-bg-color: #212121;
+	--side-bar-bg-color: #2b2b2b;
+	--item-hover-bg-color: #2e2e2e;
+	--item-hover-text-color: #fff;
+	--search-select-text-color: #ddd;
+	--search-select-bg-color: #428bca90;
+	--rawblock-edit-panel-bd: #3c3c3c;
+	--monospace: 'Fira Mono', 'Cousine', 'Consolas', monospace;
+	--node-fill: #1e2022;
+	--node-border: #ffffff26;
+  }
+
+body {
+	font-size: 1.5rem;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background-color: #222;
+}
+
+.ty-table-edit {
+	background: #333;
+}
+
+table {
+	width: 100%;
+	font-size: 1.125rem;
+}
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td,
+table > tfoot > tr > th,
+table > tfoot > tr > td {
+	padding: 12px;
+	line-height: 1.2;
+	vertical-align: top;
+	border-top: 1px solid #ededed;
+}
+table > thead > tr > th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #ededed;
+}
+table > caption + thead > tr:first-child > th,
+table > caption + thead > tr:first-child > td,
+table > colgroup + thead > tr:first-child > th,
+table > colgroup + thead > tr:first-child > td,
+table > thead:first-child > tr:first-child > th,
+table > thead:first-child > tr:first-child > td {
+	border-top: 0;
+}
+table > tbody + tbody {
+	border-top: 2px solid #ededed;
+}
+p {
+	font-weight: 300;
+	line-height: 1.5;
+}
+a {
+	color: #101010;
+}
+abbr {
+	border-bottom: 1px white dotted;
+	cursor: help;
+}
+pre,
+code {
+	font-family: Menlo, Monaco, "JetBrains Mono", monospace;
+}
+/* 单行代码块 */
+code,
+.md-fences  {
+	color: #c59d9d;
+	cursor: white;
+}
+/* 代码块边框*/
+.md-fences {
+	padding: 1.125em;
+	margin-bottom: 0.88em;
+	font-size: 1rem;
+	border: 1px solid #c6c4c4;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+}
+
+blockquote {
+	padding: 1.33em;
+	font-style: normal;
+	border-left: 5px solid #fafafa;
+	color: #e6e6e6;
+	cursor:var(--primary-btn-text-color);
+}
+blockquote em {
+	color: #fff;
+}
+blockquote footer {
+	font-size: .85rem;
+	font-style: normal;
+	background-color: #7a7a7a;
+	color: #fff;
+	border-color: transparent;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	font-family: "Lato","思源宋体", 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: bold;
+	line-height: 1.2;
+	margin: 1em 0 0.5em;
+}
+@media screen and (min-width: 48em) {
+	.h1,
+	h1 {
+		font-size: 3.250rem;
+	}
+	.h2,
+	h2 {
+		font-size: 2.298rem;
+	}
+	.h3,
+	h3 {
+		font-size: 1.625rem;
+	}
+	.h4,
+	h4 {
+		font-size: 1.3rem;
+	}
+	#write>h4.md-focus:before,
+	#write>h5.md-focus:before,
+	#write>h6.md-focus:before{
+		top: 1px;
+	}
+	.p,
+	p,
+	li {
+		font-size: 1.25rem;
+		line-height: 1.8;
+	}
+	table {
+		font-size: 1.25rem;
+	}
+}
+@media (max-width: 48em) {
+	blockquote {
+		margin-left: 1rem;
+		margin-right: 0;
+		padding: 0.5em;
+	}
+	.h1,
+	h1 {
+		font-size: 2.827rem;
+	}
+	.h2,
+	h2 {
+		font-size: 1.999rem;
+	}
+	.h3,
+	h3 {
+		font-size: 1.413rem;
+	}
+	.h4,
+	h4 {
+		font-size: 1.3rem;
+	}
+}
+@media screen and (min-width: 64em) {
+	.h1,
+	h1 {
+		font-size: 4.498rem;
+	}
+	.h2,
+	h2 {
+		font-size: 2.29rem;
+	}
+	.h3,
+	h3 {
+		font-size: 1.9rem;
+	}
+	.h4,
+	h4 {
+		font-size: 1.591rem;
+	}
+	#write>h4.md-focus:before{
+		top:4px;
+	}
+}
+a {
+	color: #aba8b2;
+	text-decoration: underline;
+}
+
+#write {
+	padding-top: 2rem;
+}
+
+#write pre.md-meta-block {
+	min-height: 35px;
+	padding: 0.5em 1em;
+	white-space: pre;
+	border: 0px;
+
+	border-left: 30px #191818 solid;
+	border-right: 30px #191919 solid;
+	width: 100vw;
+	max-width: calc(100% + 60px);
+
+	margin-left: -30px;
+	margin-bottom: 2em;
+	margin-top: -2010px;
+	padding-top: 2000px;
+	padding-bottom: 10px;
+	line-height: 1.5em;
+	color: #fafafa;
+	background-color: #2f4567;
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: 300;
+	clear: both;
+	padding-left: 0;
+	font-size:1.125rem;
+}
+.md-image>.md-meta {
+	color: #85828d
+}
+.footnotes {
+	font-size:1.1rem;
+}
+.md-tag {
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif;
+}
+.code-tooltip {
+	background: black;
+}
+.code-tooltip-content {
+	font-size: 1.1rem;
+}
+
+.task-list{
+	padding-left: 0;
+}
+
+.md-task-list-item {
+	padding-left:34px;
+}
+
+.md-task-list-item > input{
+	width: 1.25rem;
+	height: 1.25rem;
+	display: block;
+	--webkit-appearance: initial;
+	top: -0.2rem;
+	margin-left: -1.6em;
+	margin-top: calc(1rem - 7px);
+	border: none;
+}
+
+.md-task-list-item > input:focus{
+	outline: none;
+	box-shadow: none;
+}
+
+.md-task-list-item > input:before{
+	border: 1px solid #fff;
+	border-radius: 1.5rem;
+	width: 1.5rem;
+	height: 1.5rem;
+	background: #555;
+	content: ' ';
+	transition: background-color 200ms ease-in-out;
+	display: block;
+}
+
+.md-task-list-item > input:checked:before,
+.md-task-list-item > input[checked]:before{
+	background: #999;
+	border-width: 2px;
+	display:inline-block;
+	transition: background-color 200ms ease-in-out;
+}
+
+.md-task-list-item > input:checked:after,
+.md-task-list-item > input[checked]:after {
+	opacity: 1;
+}
+
+.md-task-list-item > input:after {
+	opacity: 1;
+	-webkit-transition: opacity 0.05s ease-in-out;
+	-moz-transition: opacity 0.05s ease-in-out;
+	transition: opacity 0.05s ease-in-out;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 0.4375rem;
+	left: 0.28125rem;
+	width: 0.9375rem;
+	height: 0.5rem;
+	border: 3px solid #000;
+	border-top: 0;
+	border-right: 0;
+	content: ' ';
+	opacity: 0;
+}
+
+.md-tag {
+	color:inherit;
+}
+
+.md-toc:focus .md-toc-content{
+	margin-top: 19px;
+}
+
+#typora-sidebar {
+	font-size:1rem !important;
+}
+
+.html-for-mac #typora-sidebar {
+	background-color:black;
+}
+
+.outline-content li, .outline-content ul {
+	font-size:1rem !important;
+}
+
+.outline-title {
+	line-height: inherit;
+	margin-top: 10px;
+}
+
+.outline-expander {
+	width: 18px;
+}
+
+.outline-expander:before {
+ 	content: "+";
+	font-family: inherit;
+	color: rgb(224, 223, 223); 
+  font-size: 1.5rem;
+ 	top: -0.1rem;
+}
+
+.outline-expander:hover:before {
+	content: "+";
+}
+
+.outline-item-open>.outline-item>.outline-expander:before{
+	content: "-";
+}
+
+/** source code mode */
+#typora-source {
+	font-family: Courier, monospace;
+    color: #bebcbc;
+}
+
+.os-windows #typora-source {
+	font-family: inherit;
+}
+
+.cm-s-typora-default .cm-header, 
+.cm-s-typora-default .cm-property,
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+	color: #6eb0ea;
+}
+
+.cm-s-typora-default .cm-atom, .cm-s-typora-default .cm-number {
+	color: #cac8c8;
+}
+
+.md-diagram-panel {
+	margin-top: 24px;
+	margin-left: -1.2em;
+}
+
+.md-mathjax-midline {
+	background: #1a1a1a;
+}
+
+.enable-diagrams pre.md-fences[lang="sequence"] .code-tooltip,
+.enable-diagrams pre.md-fences[lang="flow"] .code-tooltip,
+.enable-diagrams pre.md-fences[lang="mermaid"] .code-tooltip {
+    bottom: -3.4em;
+}
+
+
+#typora-sidebar {
+	border-right: 1px solid #19191c;
+  }
+  
+  #typora-sidebar .sidebar-tabs {
+	font-family: 'Adelle', 'Times New Roman', serif;
+	border-bottom: 1px solid #19191c;
+  }
+  
+  #typora-sidebar .file-list-item-file-name {
+	font-family: 'Adelle', 'Times New Roman', serif;
+	font-size: 1.2em;
+  }
+  
+  #typora-sidebar #file-library-search-input {
+	background: #2b2b2b;
+  }
+  
+  #typora-sidebar #file-library-search .file-list-item-file-name {
+	font-size: 1.1rem;
+  }
+  
+  #typora-sidebar #file-library-search .ty-search-item.active {
+	background: #212121;
+  }
+  
+  #typora-sidebar .file-list-item-summary,
+  #typora-sidebar .ty-search-item-line {
+	font-family: 'Avenir Next LT Pro', 'Lato', sans-serif;
+  }
+  
+  #typora-sidebar .ty-file-search-match-text,
+  #typora-sidebar .ty-outline-hit {
+	font-weight: bold;
+	background: transparent;
+  }
+  
+  #typora-sidebar #outline-content {
+	line-height: 1.4em;
+  }
+  
+  #typora-sidebar #outline-content .outline-h1 > .outline-item {
+	font-family: 'Adelle', 'Times New Roman', serif;
+  }
+  
+  #typora-sidebar #outline-content .outline-h1 > .outline-item {
+	padding-left: 0em;
+  }
+  
+  #typora-sidebar #outline-content .outline-h2 > .outline-item {
+	padding-left: 0.75em;
+  }
+  
+  #typora-sidebar #outline-content .outline-h3 > .outline-item {
+	padding-left: 1.5em;
+  }
+  
+  #typora-sidebar #outline-content .outline-h4 > .outline-item {
+	padding-left: 2.25em;
+  }
+  
+  #typora-sidebar #outline-content .outline-h5 > .outline-item {
+	padding-left: 3em;
+  }
+  
+  #typora-sidebar #outline-content .outline-h6 > .outline-item {
+	padding-left: 3.75em;
+  }
+  
+  #typora-sidebar #outline-content .outline-item:hover {
+	background: #1e2022;
+  }
+  
+  #typora-sidebar .outline-title-wrapper,
+  #typora-sidebar .outline-item-wrapper.outline-h1 > .outline-item {
+	font-family: 'Adelle', 'Times New Roman', serif;
+  }
+  
+  #typora-sidebar .file-library-node,
+  #typora-sidebar .file-library-node .file-node-background {
+	transition: background .4s;
+  }
+  
+  #typora-sidebar .file-tree-node {
+	padding-left: .75em;
+  }
+  
+  #typora-sidebar .file-tree-node i, #typora-sidebar .file-tree-node span {
+	vertical-align: middle;
+  }
+  
+  #typora-sidebar .file-tree-node .file-node-icon, #typora-sidebar .file-tree-node .file-node-title {
+	margin-left: 2px;
+  }
+  
+  #typora-sidebar .file-tree-node .file-tree-node:not(.file-library-file-node) > .file-node-content {
+	font-style: italic;
+  }
+  
+  #typora-sidebar .file-tree-node.file-node-root > .file-node-content {
+	font-weight: bold;
+	font-style: italic;
+  }
+  
+  #typora-sidebar .file-tree-node.file-library-file-node:not(.active):hover .file-node-background,
+  #typora-sidebar .file-list-item.file-library-node:not(.active):hover {
+	background: #1e2022;
+  }
+  
+  #typora-sidebar .file-tree-node.file-library-file-node.active .file-node-background,
+  #typora-sidebar .file-list-item.file-library-file-node.active {
+	border-left: 5px solid #428bca;
+  }
+  
+  #typora-sidebar .blink-area {
+	animation: none;
+  }
+  
+  #typora-sidebar #ty-sidebar-footer {
+	border-top: 1px solid #19191c;
+  }
+  
+  #typora-sidebar #ty-sidebar-footer .sidebar-footer-item {
+	transition: background .3s;
+  }
+  
+  #typora-sidebar #ty-sidebar-footer .sidebar-footer-item:hover {
+	background: #1e2022;
+  }
+  
+  #typora-sidebar #ty-sidebar-footer #sidebar-files-menu .menuitem-group-label {
+	font-style: italic;
+	color: #f5edf5;
+  }
+  
+  #typora-sidebar #ty-sidebar-footer #sidebar-files-menu .show + .menuitem-group-label.show {
+	border-color: #1e2022;
+  }
+  
+  #typora-sidebar #ty-sidebar-footer #sidebar-files-menu li > a:hover {
+	background: #1e2022;
+  }
+  
+  #typora-sidebar #ty-sidebar-footer #sidebar-files-menu .ty-side-sort-btn {
+	cursor: pointer;
+  }
+  
+  #typora-sidebar #ty-sidebar-footer #sidebar-files-menu .ty-side-sort-btn.active, #typora-sidebar #ty-sidebar-footer #sidebar-files-menu .ty-side-sort-btn:hover {
+	color: #428bca;
+  }
+  
+  #typora-sidebar #ty-sidebar-footer #sidebar-files-menu .ty-side-sort-btn.active {
+	background: #1b1b1d;
+}
+
+.megamenu-opened header {
+	background-image: none;
+  }
+  
+  #top-titlebar, #top-titlebar * {
+	color: inherit;
+  }
+  
+  #megamenu-content {
+	padding-top: 28px;
+	background: #2b2b2b;
+	color: #ddd;
+  }
+  
+  #megamenu-content .long-btn {
+	border-color: #e6d8d88f;
+	transition: border-color .4s;
+  }
+  
+  #megamenu-content .long-btn:hover {
+	border-color: #428bca;
+	background: #222;
+	color: #fff !important;
+  }
+  
+  #megamenu-menu-panel:not(:first-of-type) {
+	margin-top: 48px;
+  }
+  
+  #recent-file-panel-action-btn {
+	background: inherit;
+	border-color: #9292928f;
+	transition: all .4s;
+  }
+  
+  #recent-file-panel-action-btn:hover {
+	border-color: #428bca;
+	background: #222;
+	color: #fff;
+  }
+  
+  #recent-document-table {
+	background-color: inherit;
+  }
+  
+  #recent-file-panel tbody tr:nth-child(2n-1) {
+	background-color: inherit;
+  }
+  
+  #recent-file-panel tbody tr:hover {
+	background-color: #222 !important;
+  }
+  
+  #recent-file-panel tbody tr:hover td:nth-child(1) {
+	color: #fff;
+  }
+
+#megamenu-menu-sidebar {
+	background-color: #1e2022;
+	color: #ddd;
+  }
+  
+  .megamenu-menu-header,
+  .megamenu-menu-list li:not(.saved) a {
+	transition: all .4s;
+  }
+  
+  .megamenu-menu-header {
+	border-bottom: 1px solid #1b1b1d;
+  }
+  
+  .megamenu-menu-header:hover {
+	background: #161819;
+  }
+  
+  .megamenu-menu-list li:not(.saved) a:not(.active):hover,
+  .megamenu-menu-list li a.active {
+	background: #101010 !important;
+  }
+  
+  #m-saved {
+	background: inherit;
+	color: inherit;
+  }
+  
+  #megamenu-menu-list {
+	margin: 0;
+  }
+  
+  .theme-preview-div {
+	transition: all .4s;
+  }
+  
+  .theme-preview-div:hover {
+	border: 4px solid #285e8e;
+  }
+  
+  .theme-preview-div.active, .theme-preview-div.active:hover {
+	border: 4px solid #428bca;
+  }
+  
+  .theme-preview-div.active i {
+	color: #428bca;
+  }
+  
+  .ty-preferences .window {
+	background: #2b2b2b;
+  }
+  
+  .ty-preferences .nav-group-item {
+	background: transparent;
+	color: #ddd;
+	cursor: pointer;
+  }
+  
+  .ty-preferences .nav-group-item:not(.active):hover {
+	background: #222;
+	color: inherit;
+  }
+  
+  .ty-preferences .nav-group-item:active, .ty-preferences .nav-group-item.active {
+	background: #181818;
+	color: inherit;
+  }
+  
+  .ty-preferences .btn-default {
+	background: transparent;
+	color: inherit;
+	border-color: #9292928f;
+	cursor: pointer;
+  }
+  
+  .ty-preferences .btn-default:hover {
+	border-color: #428bca;
+	background: #222 !important;
+	color: #fff;
+  }
+  
+  .ty-preferences .btn-default:active, .ty-preferences .btn-default.active {
+	background: #181818;
+  }
+  
+  .ty-preferences select,
+  .ty-preferences ul.dropdown-menu {
+	border-color: #9292928f;
+	background: #2b2b2b;
+  }
+  
+  .ty-preferences ul.dropdown-menu li {
+	background: #2b2b2b;
+  }
+  
+  .ty-preferences ul.dropdown-menu li:hover {
+	background: #222;
+}
+
+
+.dropdown-menu .divider {
+	border-color: #e5e5e5;
+}
