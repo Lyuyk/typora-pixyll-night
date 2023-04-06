@@ -3,6 +3,28 @@
 
 
 :root {
+	/* == 颜色设置 == */
+	/* 超链接颜色 */
+	--link-color-light: #2E67D3;
+	--link-color-dark: #8bb1f9;
+	--md-char-color: hsl(212, 100%, 85%);
+	--link-hover: hsl(212, 100%, 85%);
+	--focus-cont-bg: hsl(0, 0%, 10%);
+	--focus-para-bg: hsl(0, 0%, 15%);
+	--opt-borderb: 1px dashed hsl(212, 100%, 65%);
+	--focus-shadow: 0px 8px 16px 0 rgba(0, 0, 0, 0.9);
+	--opt-shadow: 0px 8px 16px 1px hsla(0, 0%, 0%, 0.3);
+	/*change background of sidebar*/
+	--side-bar-bg-color: #282828;
+	--window-border: 0px solid #929292;
+	--title-color: #dddddd;
+	--text-color: #dcdcdc;
+	--select-text-bg-color: #9ab1cf;
+	--select-text-font-color: #161616;
+	--mermaid-theme: night;
+
+	--control-text-color: var(--title-color);
+    --control-text-hover-color: var(--text-color);
 	--bg-color: #2e3032;
 	--text-color: #e7e6e6;
 	--md-char-color: #5b5b5b;
