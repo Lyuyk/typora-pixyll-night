@@ -3,7 +3,6 @@
 
 
 :root {
-	--control-text-color: #443a3a;
 	--bg-color: #2e3032;
 	--text-color: #e7e6e6;
 	--md-char-color: #5b5b5b;
@@ -15,8 +14,10 @@
 	--primary-btn-text-color: #ddd;
 	--window-border: 1px solid #1b1b1d;
 	--active-file-bg-color: #1b1b1d;
-	--active-file-text-color: inherit;
-	--active-file-border-color: #757575;
+	/* 文件列表 当前文件激活 背景色*/
+	--active-file-text-color: hsl(212, 100%, 75%);
+	--active-file-border-color: hsl(212, 100%, 75%);
+
 	--active-search-item-bg-color: #212121;
 	--side-bar-bg-color: #2b2b2b;
 	--item-hover-bg-color: #2e2e2e;
@@ -28,7 +29,7 @@
 	--node-fill: #1e2022;
 	--node-border: #ffffff26;
   }
-  
+
 /**
  * forked from pixyll.com
  * MIT license
