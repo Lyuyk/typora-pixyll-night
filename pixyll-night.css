@@ -203,6 +203,11 @@ body {
 	background: #333;
 }
 
+.ty-tooltip{
+	background: #282828;
+  color: #fff;
+}
+
 table {
 	width: 100%;
 	font-size: 1.125rem;
@@ -247,6 +252,7 @@ abbr {
 pre,
 code {
 	font-family: Menlo, Monaco, "JetBrains Mono", monospace;
+	font-size: 1rem;
 }
 /* 单行代码块 */
 code,
