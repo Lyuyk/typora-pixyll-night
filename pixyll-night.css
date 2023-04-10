@@ -994,6 +994,13 @@ a {
 	background: #222;
 }
 
+/* 退出代码模式的按钮，以及最近打开文件页面中的按钮 */
+.typora-sourceview-on #toggle-sourceview-btn,
+#recent-file-panel-action-btn {
+  /* 设为透明，用于覆盖掉默认的浅色 */
+  background: #00000000;
+}
+
 
 .dropdown-menu .divider {
 	border-color: #e5e5e5;
